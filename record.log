@@ -1,0 +1,51 @@
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.31.164:5002
+[33mPress CTRL+C to quit[0m
+Exception on /starships/1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "fake-server-app.py", line 33, in starships
+    time.sleep(random.randrange(0.001,3))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/random.py", line 186, in randrange
+    raise ValueError("non-integer arg 1 for randrange()")
+ValueError: non-integer arg 1 for randrange()
+127.0.0.1 - - [13/Apr/2023 14:09:26] "[35m[1mGET /starships/1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [13/Apr/2023 14:09:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+Exception on /starships/1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "fake-server-app.py", line 33, in starships
+    time.sleep(random.randrange(0.001,3))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/random.py", line 186, in randrange
+    raise ValueError("non-integer arg 1 for randrange()")
+ValueError: non-integer arg 1 for randrange()
+127.0.0.1 - - [13/Apr/2023 14:09:32] "[35m[1mGET /starships/1 HTTP/1.1[0m" 500 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.31.164:5002
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [13/Apr/2023 14:10:05] "GET /starships/1 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2023 14:10:09] "GET /starships/1 HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.31.164:5002
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [13/Apr/2023 14:15:29] "GET /starships/1 HTTP/1.1" 200 -

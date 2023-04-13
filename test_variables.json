@@ -1,0 +1,14 @@
+{
+    "urlBase" : "http://127.0.0.1:",
+    "peoplePath" : "/people/",
+    "planetsPath" : "/planets/",
+    "starshipsPath" : "/starships/",
+    "port" : "5001",
+    "image_name" : "fake-server-app",
+    "container_name" : "fake-server-app",
+    "valid_responses":[
+        {"name": "Luke Skywalker"},
+        {"name": "Venus"},
+        {"name": "Star Destroyer"}
+    ]   
+}

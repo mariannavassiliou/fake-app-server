@@ -1,7 +1,7 @@
 import csv
 import math
 
-with open('test.csv', mode='r') as csv_file:
+with open('test_results.csv', mode='r') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     line_count = 0
     duration_sum = 0
@@ -15,7 +15,8 @@ with open('test.csv', mode='r') as csv_file:
             line_count += 1
         line_count += 1
     mean = duration_sum/len(duration_list)
+    print(f"Mean is equal to {mean}")
     for duration in duration_list:
         diff_to_mean = (duration - mean) ** 2
     std_variation = math.sqrt(diff_to_mean/len(duration_list))
-    print(std_variation)
+    print(f"Standard deviation is equal to {std_variation}")
