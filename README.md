@@ -1,9 +1,8 @@
 This document describes the process to build the fake-server-app project and execute the functional and the performance tests.
-
-To run the test suite you need: docker client (ie. Docker Desktop), Python3, pytest module, K6 test framework and allure framework for the report of reults.
 During the test setup, the script automatically raises the container , runs the tests using the pytest module and saves the logs internally. After completion a container teardown is initiated where the container and all relevant processes are killed.
 
 Before you run the tests, you need the following plugins/ modules/ frameworks installed on your machine:
+- Docker client for windows (e.g. docker desktop)
 - Python 3
 - pip installation
 - pytest module
