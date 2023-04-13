@@ -1,8 +1,15 @@
 This document describes the process to build the fake-server-app project and execute the functional and the performance tests.
 
 To run the test suite you need: docker client (ie. Docker Desktop), Python3, pytest module, K6 test framework and allure framework for the report of reults.
-During the test setup, the script automatically raises the container , runs the tests using the pytest module and saves the logs internally. After completion a container teardown is initiated where the container and all relevant processes are killed. I used pytest-docker
+During the test setup, the script automatically raises the container , runs the tests using the pytest module and saves the logs internally. After completion a container teardown is initiated where the container and all relevant processes are killed.
 
+Before you run the tests, you need the following plugins/ modules/ frameworks installed on your machine:
+- Python 3
+- pip installation
+- pytest module
+- After you have installed pip, you can execute: pip install requests
+- K6 framework
+- Allure binary file 
 
 Functional Test Suite Steps
 1. Build docker image in project directory using the following command "docker build -t fake-server-app .".
