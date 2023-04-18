@@ -43,6 +43,10 @@ class TestClass():
         response = requests.get(url=urlBase+port+peoplePath+"101")
         assert response.status_code == 404
 
+    def test_get_people_error_characters(self) :
+        response = requests.get(url=urlBase+port+peoplePath+"abc")
+        assert response.status_code == 404
+
     def test_get_planets_success(self) :
         response = requests.get(url=urlBase+port+planetsPath+"1")
         responseJson = json.loads(response.text)
